@@ -1,0 +1,218 @@
+* {
+    background-color: rgb(32, 54, 75);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #DCE0F2;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#icon {
+    float: left;
+    cursor: pointer;
+    z-index: 10;
+    padding-left: 4rem;
+    height: 4rem;
+}
+
+#contact-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: right; 
+    padding: 1rem;
+    padding-right: 3rem;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#top {
+    background-color: rgb(37, 54, 75);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: sticky;
+    top: -50em;
+    margin-bottom: 0;
+    z-index: 5;
+    min-width: 550px;
+}
+
+#top img{
+
+    overflow: hidden;
+    min-width: 550px;
+}
+
+h1,
+h2 {
+    position: fixed;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgba(32, 54, 75, 0.75);
+    color: rgb(233, 141, 24);
+    min-width: 500px;
+}
+
+h1 {
+    padding-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    top: 7rem;
+}
+
+h2 {  
+    padding-bottom: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    top: 12.62rem;
+}
+
+main {
+    position: static;
+    /* add headshot
+    display: grid;
+    grid-template: 1fr / 2fr 1fr; */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    min-width: 550px;
+}
+
+main img {
+    justify-self: left;
+    margin-right: 8rem;
+    height: 15rem;
+    width: auto;
+    margin: 2em;
+    z-index: 10;
+    /* add headshot
+    grid-column: 2 / span 7;*/
+}
+
+img#github {
+    border-radius: 100%;
+}
+
+.about {
+    background-color: transparent;
+    color:rgb(32, 54, 75);
+    padding: 2rem;
+    z-index: 20;
+}
+
+h3.about {
+    font-size: 26px;
+    position:absolute;
+    right: 29rem;
+    top: 20rem;
+}
+
+p.about {
+    position:absolute;
+    right: 20rem;
+    top: 25rem;
+    max-width: 400px;
+    font-size: 20px;
+}
+
+p {
+    padding-top: .5rem;
+    padding-bottom: .5em;
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 2em;
+    padding-bottom: 0;
+}
+
+h4 {
+    padding-top: .5rem;
+    font-size: 1.5em;
+}
+
+#scalc {
+    cursor: pointer;
+}
+
+#scalcDesc{
+    transition: all 5s linear;
+    display: none;
+}
+
+#home {
+    position: relative;
+    top: 20rem;
+}
+
+/* add headshot
+#img {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-column: 2 / span 7;
+}*/
+
+.break {
+    height: 2rem;
+}
+
+li {
+    display: inline;
+}
+
+#logos a img {
+    text-align: center;
+    height: 3rem;
+    width: auto;
+}
+
+#projects {
+    display: flex;
+    align-content: top;
+}
+
+#projects div {
+    justify-content: center;
+}
+
+footer {
+    padding: 4rem;
+}
+
+@media only screen and (max-width: 550px){
+
+    h1,
+    h2 {
+        padding-left: 2rem;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 2.5 em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}
