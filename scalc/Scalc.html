@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Household Savings Calculator</title>
-    <link href="./Resources/CSS/scalc.css" rel="stylesheet" />
+    <link href="Resources/CSS/scalc.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
@@ -16,28 +16,40 @@
     </header>
     <div id="form">
     <form>
-        <label>Income</label>
-        <input type="number" id="income" name="income">
-        <label>Housing</label>
-        <input type="number" id="housing" name="housing" class="expense">
-        <label>Utilities</label>
-        <input type="number" id="utilities" class="expense" name="utilities" value="">
-        <label>Phone</label>
-        <input type="number" id="phone" class="expense" name="phone" value="">
-        <label>Internet</label>
-        <input type="number" id="internet" class="expense" name="internet" value="">
-        <label>Cable</label>
-        <input type="number" id="cable" class="expense" name="cable" value="">
-        <label>Groceries</label>
-        <input type="number" id="groceries" class="expense" name="groceries" value="">
-        <label>Restaurants</label>
-        <input type="number" id="restaurants" class="expense" name="restaurants" value="">
-        <label>Entertainment</label>
-        <input type="number" id="entertainment" class="expense" name="entertainment" value="">
-        <label>Gas</label>
-        <input type="number" id="gas" class="expense" name="gas" value="">
-        <label>Clothes</label>
-        <input type="number" id="clothes" class="expense" name="clothes" value="">
+        <div>
+            <label>Income</label>
+            <input type="number" id="income" name="income"> 
+        </div>
+        <div>
+            <label>Housing</label>
+            <input type="number" id="housing" name="housing" class="expense"><br>
+            <label>Utilities</label>
+            <input type="number" id="utilities" class="expense" name="utilities" value=""><br>
+            <label>Phone</label>
+            <input type="number" id="phone" class="expense" name="phone" value=""><br>
+            <label>Internet</label>
+            <input type="number" id="internet" class="expense" name="internet" value=""><br>
+            <label>Cable</label>
+            <input type="number" id="cable" class="expense" name="cable" value=""><br>
+        </div>
+        <div>
+            <label>Groceries</label>
+            <input type="number" id="groceries" class="expense" name="groceries"><br>
+            <label>Restaurants</label>
+            <input type="number" id="restaurants" class="expense" name="restaurants"><br>
+        </div>
+        <div>
+            <label for="car">Car Note</label>
+            <input type="number" id="car" class="expense" name="car"><br>
+            <label>Gas</label>
+            <input type="number" id="gas" class="expense" name="gas"><br>
+        </div>
+        <div id="misc">
+            <label>Entertainment</label>
+            <input type="number" id="entertainment" class="expense" name="entertainment" value=""><br>
+            <label>Clothes</label>
+            <input type="number" id="clothes" class="expense" name="clothes" value=""><br>
+        </div>
     </form>
     </div>
     <div id="button">
@@ -46,6 +58,6 @@
     <p id="result"></p>
 </body>
 
-<script src="./Resources/JS/scalc.js"></script>
+<script src="Resources/JS/scalc.js"></script>
 
 </html>

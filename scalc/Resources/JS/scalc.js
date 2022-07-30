@@ -1,4 +1,6 @@
-let button = document.getElementById('button');
+const { builtinModules } = require("module");
+
+//let button = document.getElementById('button');
 
 
 const sum = (num1, num2) => {
@@ -6,33 +8,33 @@ const sum = (num1, num2) => {
 };
 
 const getInc = () => {
-    let incomeElement =  document.getElementById("income");
+    //let incomeElement =  document.getElementById("income");
     let income = 0;
-    if (incomeElement.valueAsNumber > 0) {
-        income = incomeElement.valueAsNumber;
-    } else {
-        income = 0;
+    //if (incomeElement.valueAsNumber > 0) {
+        //income = incomeElement.valueAsNumber;
     }
-    return income;
-};
+    //return income;
+;
 
-const getExp = () => {
-    let expense = document.getElementsByClassName("expense");
+function getExp() {
+    //let expense = document.getElementsByClassName("expense");
     let expenses = [0];
-    for(let i = 0; i < expense.length; i++){
+    for (let i = 0; i < expense.length; i++) {
         let value = expense[i].valueAsNumber;
         if (value > 0) {
             expenses.push(value);
         } else {
             expenses.push(0);
         }
-    };
+    }
     return expenses.reduce(sum);
-};
+}
 
-const calc = () => {
-    let total = getInc() - getExp();
-    console.log(getExp())
+//let income = getInc();
+//let expenses = getExp();
+
+function subtract(num1, num2) {
+    let total = num1 - num2
     return total;
 };
 
@@ -51,4 +53,6 @@ const print = () => {
     }
 };
 
-button.addEventListener('click', print);
+//button.addEventListener('click', print);
+
+module.exports.subtract = subtract;

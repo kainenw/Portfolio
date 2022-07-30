@@ -5,58 +5,75 @@
     font: arial;
     text-align: center;
     font-family: 'EB Garamond', serif;
-    margin: 0
+    margin: 0;
 }
 
 header {
-    border-bottom: 1px solid darkslategray;
-    padding: 1rem;
-    margin: 0;
-    height: ;
+    background-color: aliceblue;
+    box-shadow: .5rem .5rem 1.5rem  darkslategray;
+    padding: 5px;
+    margin: 0; 
+    z-index: 10;
 }
 
 h1 {
     font-size: 3em;
     font-family: 'Cinzel', serif;
+    background-color: inherit;
 }
 
 h2 {font-size: 1.5em;}
 
 form {
+    margin-top: 2em;
     text-align: right;
-    display: grid;
+    display: flex;
     grid-template: repeat(11, 1fr) / 1fr 1fr;
-    padding-top: 3rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: .5em;
     align-items: center;
 }
 
 #form {
-    min-width: 600px;
+    /*min-width: 600px;*/
 }
 
 form label {
+    /* from grid layout
     display: inline-block;
     position: relative;
-    text-align: left;
-    padding-right: 1em;
-    font-weight: 600;
+    text-align: left; 
     margin-left: auto;
-    align-items: center;
+    align-items: center;*/
+    padding-right: 0.5em;
+    padding-left: 1em;
+    font-weight: 600;
+
 }
 
 form input {
+    /*from grid layout
     display: inline-block;
-    width: 3em;
     position: relative;
-    text-align: center;
     right: 0px;
-    padding-right: 0;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    border: 1px solid darkslategray;
+    padding-right: 0;*/
+    width: 3em;
+    text-align: center;
+    margin: 0.25em;
     background-color: hsl(203,92%,90%);
     transition: all 400ms;
     border:1px solid lightskyblue;
+    border-radius: 10px;
 }
 
 input:focus {
@@ -64,7 +81,6 @@ input:focus {
     color: black;
     border: 1px solid black;
     transition: all 400ms;
-    width: 3em;
 }
 
 #button {
@@ -72,7 +88,7 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    margint-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /*removing the arrows*/
@@ -107,6 +123,7 @@ input::-webkit-inner-spin-button {
 	border: 1px dotted darkslateblue;
     transform: translate(3px, 5px);
 }
+
 #button h3:active {
     box-shadow: none;
     background-color: hsl(203,92%,80%);
