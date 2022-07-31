@@ -4,7 +4,7 @@ const subtract = require('./scalc.js')
 const { it } = require('node:test');
 const { builtinModules } = require("module");
 
-describe ('scalc', () => {
+//describe ('scalc', () => {
     /* create setup and teardown for each test
     path = './temp-test-file';
     str = '';
@@ -45,4 +45,4 @@ describe ('scalc', () => {
             assert.equal(result, expectedResult);
         })
     })
-})
+//})

@@ -1,46 +1,32 @@
-const { builtinModules } = require("module");
 
-//let button = document.getElementById('button');
-
-
-const sum = (num1, num2) => {
-    return num1 + num2;
-};
 
 const getInc = () => {
-    //let incomeElement =  document.getElementById("income");
+    let incomeElement = document.getElementById("income");
     let income = 0;
-    //if (incomeElement.valueAsNumber > 0) {
-        //income = incomeElement.valueAsNumber;
+    if (incomeElement.valueAsNumber > 0) {
+        income = incomeElement.valueAsNumber;
     }
-    //return income;
-;
+    return income;
+};
 
 function getExp() {
-    //let expense = document.getElementsByClassName("expense");
+    let expense = document.getElementsByClassName("expense");
     let expenses = [0];
+    const sum = (num1, num2) => {
+        return num1 + num2;
+    };
     for (let i = 0; i < expense.length; i++) {
         let value = expense[i].valueAsNumber;
         if (value > 0) {
             expenses.push(value);
-        } else {
-            expenses.push(0);
         }
     }
     return expenses.reduce(sum);
 }
 
-//let income = getInc();
-//let expenses = getExp();
-
-function subtract(num1, num2) {
-    let total = num1 - num2
-    return total;
-};
-
 const print = () => {
     let result = document.getElementById('result');
-    let total = calc();
+    let total = getInc() - getExp();
     if(total > 0) {
         result.innerHTML = `You could add<br> <span>$${total}</span><br> to your savings every month!`;
         result.getElementsByTagName('span')[0].style.color = "forestgreen";
@@ -53,6 +39,7 @@ const print = () => {
     }
 };
 
-//button.addEventListener('click', print);
+let button = document.getElementById('button');
+button.addEventListener('click', print);
 
-module.exports.subtract = subtract;
+//module.exports = subtract;
