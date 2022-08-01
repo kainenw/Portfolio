@@ -8,11 +8,13 @@
     text-align: center;
 }
 
+/* header */
 header {
     height: 4rem;
     width: 100%;
     position: fixed;
     z-index: 10;
+    border-bottom: 1px solid #DCE0F2;
 }
 
 #icon {
@@ -26,7 +28,7 @@ header {
 #contact-link {
     font-size: 1.5rem;
     font-weight: bold;
-    float: right; 
+    float: right;
     padding: 1rem;
     padding-right: 3rem;
     margin: 0;
@@ -34,21 +36,19 @@ header {
     text-decoration: none;
 }
 
-#top {
+section {
+    background-image: url("Img/geometric-pattern.jpg");
+    background-size: auto 30rem;
+    background-repeat: repeat-x;
     background-color: rgb(37, 54, 75);
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    width: auto;
+    height: 26rem;
     position: sticky;
-    top: -50em;
+    top: -16.29rem;
+    padding-top: 4rem;
     margin-bottom: 0;
+    padding-bottom: 0;
     z-index: 5;
-    min-width: 550px;
-}
-
-#top img{
-
-    overflow: hidden;
     min-width: 550px;
 }
 
@@ -56,10 +56,11 @@ h1,
 h2 {
     position: fixed;
     padding-left: 3rem;
-    padding-right: 3rem;
+
     background-color: rgba(32, 54, 75, 0.75);
     color: rgb(233, 141, 24);
     min-width: 500px;
+    text-align: left;
 }
 
 h1 {
@@ -67,15 +68,15 @@ h1 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 4rem;
-    top: 7rem;
+    top: 4rem;
 }
 
-h2 {  
+h2 {
     padding-bottom: 1rem;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    top: 12.62rem;
+    top: 9.62rem;
 }
 
 main {
@@ -93,12 +94,15 @@ main {
 main img {
     justify-self: left;
     margin-right: 8rem;
-    height: 15rem;
+    height: 10rem;
     width: auto;
-    margin: 2em;
     z-index: 10;
     /* add headshot
     grid-column: 2 / span 7;*/
+}
+main p{
+    padding-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 img#github {
@@ -107,23 +111,19 @@ img#github {
 
 .about {
     background-color: transparent;
-    color:rgb(32, 54, 75);
+    color: rgb(32, 54, 75);
+    background-color: rgba(32, 54, 75, 0.75);
     padding: 2rem;
     z-index: 20;
+    color: #DCE0F2;
 }
 
 h3.about {
     font-size: 26px;
-    position:absolute;
-    right: 29rem;
-    top: 20rem;
 }
 
 p.about {
-    position:absolute;
-    right: 20rem;
-    top: 25rem;
-    max-width: 400px;
+    mix-width: 400px;
     font-size: 20px;
 }
 
@@ -143,12 +143,29 @@ h4 {
     font-size: 1.5em;
 }
 
-#scalc {
-    cursor: pointer;
+#projects {
+    display: flex;
+    justify-content: center;
 }
 
-#scalcDesc{
-    transition: all 5s linear;
+#projects img{
+    border-radius: 10px;
+}
+
+#scalc {
+    justify-content: center;
+    cursor: pointer;
+    width: 40%;
+}
+
+#scalc img {
+    justify-self: center;
+    width: 100%;
+    height: auto;
+}
+
+#scalcDesc {
+    transition: display 2s linear;
     display: none;
 }
 
@@ -164,34 +181,22 @@ h4 {
     grid-column: 2 / span 7;
 }*/
 
-.break {
-    height: 2rem;
-}
-
-li {
+.logos {
     display: inline;
 }
 
-#logos a img {
+.logos img {
     text-align: center;
     height: 3rem;
     width: auto;
-}
-
-#projects {
-    display: flex;
-    align-content: top;
-}
-
-#projects div {
-    justify-content: center;
+        margin: 2em;
 }
 
 footer {
-    padding: 4rem;
+    padding: 1rem;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
 
     h1,
     h2 {
@@ -201,7 +206,6 @@ footer {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     h3 {
@@ -209,7 +213,7 @@ footer {
     }
 
     h4 {
-        font-size: 2.5 em;
+        font-size: 2.5em;
     }
 
     p {

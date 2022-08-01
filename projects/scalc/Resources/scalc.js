@@ -1,5 +1,3 @@
-
-
 const getInc = () => {
     let incomeElement = document.getElementById("income");
     let income = 0;
@@ -28,18 +26,16 @@ const print = () => {
     let result = document.getElementById('result');
     let total = getInc() - getExp();
     if(total > 0) {
-        result.innerHTML = `You could add<br> <span>$${total}</span><br> to your savings every month!`;
+        result.innerHTML = `You could add<br> <span>$${total}</span><br> to your savings each month!`;
         result.getElementsByTagName('span')[0].style.color = "forestgreen";
     }else if(total < 0) {
         absVal = Math.abs(total);
         result.innerHTML = `You would lose<br> <span>$${absVal}</span><br> from your savings each month!`;
         result.getElementsByTagName('span')[0].style.color = "red";
-    }else if(total = 0) {
+    }else if(total === 0) {
         result.innerHTML = "You wouldn't be able to save any money on this budget.";
     }
 };
 
 let button = document.getElementById('button');
 button.addEventListener('click', print);
-
-//module.exports = subtract;
