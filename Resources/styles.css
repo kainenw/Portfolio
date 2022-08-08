@@ -8,7 +8,6 @@
     text-align: center;
 }
 
-/* header */
 header {
     height: 4rem;
     width: 100%;
@@ -40,13 +39,10 @@ section {
     background-image: url("Img/geometric-pattern.jpg");
     background-size: auto 30rem;
     background-repeat: repeat-x;
-    width: auto;
     height: 26rem;
     position: sticky;
     top: -16rem;
     padding-top: 4rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
     z-index: 5;
     min-width: 550px;
 }
@@ -78,9 +74,8 @@ h1 span {
     color: inherit;
     background-color: transparent;
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 2rem;
-
 }
 
 main {
@@ -91,7 +86,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
-    
+
 }
 
 main img {
@@ -104,27 +99,21 @@ main img {
     grid-column: 2 / span 7;*/
 }
 
-main p{
-    padding-bottom: 3rem;
-    padding-top: 1rem;
+p {
     padding: 2rem;
     z-index: 20;
+    font-size: 1em;
 }
 
-img#github {
+#github {
     border-radius: 100%;
 }
 
 h3 {
     padding-top: 3rem;
+    padding-bottom: 2rem;
     font-size: 26px;
     font-size: 2em;
-}
-
-p {
-    font-size: 20px;
-    padding-bottom: .5em;
-    font-size: 1em;
 }
 
 h4 {
@@ -137,19 +126,16 @@ h4 {
     justify-content: center;
 }
 
-#projects div{
-    justify-content: center;
+#projects div {
     cursor: pointer;
     width: 33%;
 }
 
-#projects img{
+#projects img {
     border-radius: 10px;
-    justify-self: center;
     width: 100%;
     height: auto;
-}
-
+    }
 
 #scalcDesc {
     transition: display 2s linear;
@@ -173,17 +159,12 @@ h4 {
 }
 
 .logos img {
-    text-align: center;
     height: 3rem;
-    width: auto;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 footer {
-    padding: 1rem;
+    padding: 4rem;
 }
 
 @media only screen and (max-width: 550px) {
@@ -194,7 +175,6 @@ footer {
         padding-right: auto;
         width: 100%;
     }
-
 
     #projects div {
         width: 80%;
