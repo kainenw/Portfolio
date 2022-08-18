@@ -121,29 +121,28 @@ h4 {
     font-size: 1.5em;
 }
 
-#projects {
+.projects {
     display: flex;
     justify-content: center;
 }
 
-#projects div {
+.projects div {
     cursor: pointer;
     width: 33%;
+    margin: 1em;
 }
 
-#projects img {
+#scalc img, 
+#motiquotes img {
     border-radius: 10px;
     width: 100%;
-    height: auto;
+    height: 20rem;
     }
 
-#scalcDesc {
+#scalcDesc,
+#motiDesc {
     transition: display 2s linear;
     display: none;
-}
-
-#scalc {
-    display: block;
 }
 
 #home {
