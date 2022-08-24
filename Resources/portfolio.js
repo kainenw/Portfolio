@@ -1,24 +1,13 @@
-let scalcLabel = document.getElementById('scalc');
-let motiLabel = document.getElementById('motiquotes')
+let projects = document.getElementsByClassName('project');
+let desc = document.getElementsByClassName('desc');
 
-let scalcDesc = document.getElementById('scalcDesc');
-let motiDesc = document.getElementById('motiDesc')
-
-const display = (element) => {
-  if(element.style.display === 'block') {
-    element.style.display = 'none';
-  }else{
-    element.style.display = 'block';
+const display = (i) => {
+  for(let j = 0; j < projects.length; j++) {
+    desc[j].style.display = 'none';
   }
-};
-
-const displayScalc = () => {
-  return display(scalcDesc);
+  desc[i].style.display === 'block' ? desc[i].style.display = 'none' : desc[i].style.display = 'block';
 }
 
-const displayMoti = () => {
-  return display(motiDesc);
-};
-
-scalcLabel.addEventListener('click', displayScalc);
-motiLabel.addEventListener('click', displayMoti);
+for(let i = 0; i < projects.length; i++) {
+  projects[i].addEventListener('click', () => {display(i)});
+}
