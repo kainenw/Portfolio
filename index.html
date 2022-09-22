@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Titillium+Web:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <header>
@@ -40,23 +41,22 @@
         <img src="Resources/Img/bootstrap_logo.png" alt="Bootstrap">-->
     </div>
     <h3>My projects</h3>
-    <p>(click to view more about each project)</p>
-    <div class="projects">
+    <!--<p>(click to view more about each project)</p>-->
+    <div id="proj1" class="projects">
         <div class="project">
-            <h4>Savings Calculator</h4>
+            <a class="contrast" href="https://kainenw.github.io/scalc/"><h4>Savings Calculator</h4></a> 
             <img src="./Resources/Img/scalc.jpg" alt="Savings Calculator Preview">
-            <!--<a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a>-->
-            <p class="desc"><a class="contrast" href="https://kainenw.github.io/scalc/">Click here</a> to open this project.<br><br> This is a web application designed with HTML, CSS, and Javascript. The user inputs income and expenses, and the Javascript calculates how much remains and displays the result. All of the information is processed in the browser with no communication of personal data to a server. 
+            <p id="desc1" class="desc"><br><br> This is a web application designed with HTML, CSS, and Javascript. The user inputs income and expenses, and the Javascript calculates how much remains and displays the result. All of the information is processed in the browser with no communication of personal data to a server.
         </div>
-        <div class="project">
-            <h4> MotiQuotes</h4> 
-            <img src="./Resources/Img/motiquotes.jpg" alt="Motiquotes Preview">                        
-            <p class="desc"><a class="contrast" href="https://kainenw.github.io/motiquotes/">Click here</a> to open this project.<br><br> This motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.
+        <div id="proj2" class="project">
+            <a class="contrast" href="https://kainenw.github.io/motiquotes/"><h4>MotiQuotes</h4></a>
+            <img src="./Resources/Img/motiquotes.png" alt="Motiquotes Preview">                    
+            <p id="desc2" class="desc"><br><br> This motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.
         </div>
-        <div class="project">
-            <h4>Weathered</h4> 
-            <img src="./Resources/Img/weathered.png" alt=" Weathered Preview">                        
-            <p class="desc"><a class="contrast" href="https://kainenw.github.io/weathered/">Click here</a> to open this project.<br><br> This is a JavaScript weather app in the wee early stages of development. It gets data from two apis: api.weather.gov and geocode.maps.co It fetches the latitude and longitude of an address, then fetches an hour-by-hour forecast for the next 7 days. It currently can display hourly weather data from now until the end of the day. Going forward, the plan is to improve the user interface, add a slider to intuitively select time and day, display the data for the next 7 days instead of just today.
+        <div id="proj3" class="project">
+            <a class="contrast" href="https://kainenw.github.io/weathered/"><h4>Weathered</h4> </a>
+            <img src="./Resources/Img/weathered.png" alt=" Weathered Preview">                      
+            <p id="desc3" class="desc"><br><br> This React weather app is in the wee early stages of development. It gets data from two apis: api.weather.gov and geocode.maps.co It fetches the latitude and longitude of an address, then fetches an hour-by-hour forecast for the next 7 days. It then filters, formats, groups by day and displays the results.
             </p>
         </div>
         <!--project template
@@ -66,11 +66,10 @@
             <p class="desc"><a class="contrast" href="https://kainenw.github.io/motiquotes/">Click here</a> to open this project.<br><br> 
             </p>
         </div> -->
-
     </div>
         <footer>View my code on <a class="contrast" href="https://github.com/kainenw">GitHub</a></footer>
     </div>
 </main>
 </body>
-<script src="Resources/portfolio.js"></script>
+<!--<script src="Resources/portfolio.js"></script>-->
 </html>
