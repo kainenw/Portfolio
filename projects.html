@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Resources/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Titillium+Web:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+</head>
+<body>
+<nav>
+  <a href="index.html" id="home-link" >home</a>
+  <a href="projects.html" id="projects-link" >projects</a>
+  <!-- <a href="blog.html">blog</a> -->
+  <a href="contact.html" id="contact-link" >contact</a>
+</nav>
+<header id="nav-bar">
+</header>
+<section>
+    <h1>Kainen White<br><span>Developer * Writer * Musician</span></h1>
+    <img src="./Resources/Img/headshot.png" alt="Picture of Kainen" />
+</section>
+<main>
+    <ol id="projects">
+        <h3>Projects</h3>
+        <p>These are my past and current projects. They are ordered chronologically according their start date, beginning with the most recent.</p>
+        <li>
+            <a href="">Tone</a> 
+            <!-- <img src="./Resources/Img/" alt=" Preview">   -->                      
+            <p class="desc">This is an interactive way to visualize and manipulate chords. This project is ongoing and has a lot of </p>
+        </li>
+        <li class="project">
+            <a class="contrast" href="https://kainenw.github.io/reddit/">Reddit</a> 
+            <!-- <img src="./Resources/Img/" alt=" Preview">   -->                      
+            <p class="desc">This is a web app built with the React and React-Redux frameworks. It allows you to view the homepage and any subreddit, as well as search for posts and subreddits.</p>
+        </li> 
+        <li>
+            <a class="contrast" href="https://kainenw.github.io/weathered/">Weathered</a>
+            <!-- <img src="./Resources/Img/weathered.png" alt=" Weathered Preview"> -->             
+            <p class="desc" > This React weather app is in the wee early stages of development. It gets data from two apis: api.weather.gov and geocode.maps.co It fetches the latitude and longitude of an address, then fetches an hour-by-hour forecast for the next 7 days. It then filters, formats, groups by day and displays the results.</p>
+        </li>
+        <li>
+            <a class="contrast" href="https://kainenw.github.io/motiquotes/">MotiQuotes</a>
+            <!--  <img src="./Resources/Img/motiquotes.png" alt="Motiquotes Preview"> -->                    
+            <p class="desc"> This was kind of a toy project. It is far too clunky without the use of AI. I did some data mining with python to get the most used wordsThis motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.</p>
+        </li>
+        <li>
+            <a class="contrast" href="https://kainenw.github.io/scalc/">Savings Calculator</a>
+            <!-- <img src="./Resources/Img/scalc.jpg" alt="Savings Calculator Preview"> -->
+            <p class="desc"> This was my first web application. It uses HTML, CSS, and Javascript. I began this project before I knew enough about javascript to make it work. Once I had learned DOM manipulation and objects in javascript, I was able to complete it.</p>
+        </li>
+        <h3>Reddit App</h3>
+    <!--<p>(click to view more about each project)</p>-->
+    <div id="proj0" class="projects">
+      <div class="project">
+            <a class="contrast" href="https://helpful-dolphin-455119.netlify.app"><h4>Savings Calculator</h4></a> 
+            <img src="./Resources/Img/scalc.jpg" alt="Reddit App Preview">
+            <p id="desc0" class="desc"><br><br> This project is the most difficult I have completed to date. During development, I lost significant progress more than once, which taught me some better practices when it comes to data storage. It also required an expansion of my project management skills since it was a big project, but the setbacks took a lot of momentum from me. So it took a lot of determination to actually get the project finished. This is a single page application built with React and Redux. React makes the site efficient and flexible. It uses API calls to the reddit .json API for home page, subreddit and search data. All data is centralized in one Redux store.
+        </div>
+        <div class="project">
+            <a class="contrast" href="https://kainenw.github.io/scalc/"><h4>Savings Calculator</h4></a> 
+            <img src="./Resources/Img/scalc.jpg" alt="Savings Calculator Preview">
+            <p id="desc1" class="desc"><br><br> This is a web application designed with HTML, CSS, and Javascript. The user inputs income and expenses, and the Javascript calculates how much remains and displays the result. All of the information is processed directly in the browser.
+        </div>
+        <!-- <div id="proj2" class="project">
+            <a class="contrast" href="https://kainenw.github.io/motiquotes/"><h4>MotiQuotes</h4></a>
+            <img src="./Resources/Img/motiquotes.png" alt="Motiquotes Preview">                    
+            <p id="desc2" class="desc"><br><br> This motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.
+        </div>
+        <div id="proj3" class="project">
+            <a class="contrast" href="https://kainenw.github.io/weathered/"><h4>Weathered</h4> </a>
+            <img src="./Resources/Img/weathered.png" alt=" Weathered Preview">                      
+            <p id="desc3" class="desc"><br><br> This React weather app is in the wee early stages of development. It gets data from two apis: api.weather.gov and geocode.maps.co It fetches the latitude and longitude of an address, then fetches an hour-by-hour forecast for the next 7 days. It then filters, formats, groups by day and displays the results.
+            </p> -->
+        </div>
+            <div class="project">
+            <h4></h4> 
+            <img src="./Resources/Img/" alt=" Preview">                        
+            <p class="desc"><a class="contrast" href="https://kainenw.github.io/motiquotes/">Click here</a> to open this project.<br><br> 
+            </p>
+        </div> -->
+    </div>
+        <footer>View my code on <a class="contrast" href="https://github.com/kainenw">GitHub</a></footer>
+        <!--project template
+            <div class="project">
+                <a href=""><h4></h4></a> 
+            <img src="./Resources/Img/" alt=" Preview">                        
+            <p class="desc"></p>
+        </div> -->
+    </ol>
+        <footer>View my code on <a class="contrast" href="https://github.com/kainenw">GitHub</a></footer>
+    <script src="Resources/portfolio.js"></script>
+</main>
+</body>
+</html>
