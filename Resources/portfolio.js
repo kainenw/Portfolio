@@ -1,22 +1,6 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+const projs = document.getElementsByClassName("project")
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
+for(let i = 0; i < projs.length; i++){
+  console.log(desc[i]);
+  projs[i].addEventListener('click', toggle(i));
 }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("card");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "block";
-}
-

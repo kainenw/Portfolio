@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+body{
+  height: 100vh;
+}
+
 nav {
   height: 4rem;
   width: 100%;
@@ -15,6 +19,12 @@ nav {
   z-index: 20;
   border-bottom: 1px solid #DCE0F2;
   /* transition: all ease-in-out 1s; */
+}
+
+#about {
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #icon {
@@ -45,11 +55,13 @@ header {
   background-size: auto 30rem;
   background-repeat: repeat-x;
   height: 26rem;
-  position: sticky;
+  position: fixed;
   top: -22rem;
   padding-top: 4rem;
   z-index: 15;
+  width: 100%;
   min-width: 550px;
+  transition: all 500ms ease-in;
 }
 
 h1,
@@ -86,10 +98,38 @@ h1 span {
 }
 
 main {
-  max-width: 1000px;
+/*   max-width: 1000px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  height: 100vh;
   z-index: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+#slide-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+  top: 0;
+  flex-direction: column;
+  width: 98vw;
+  height: 100vh;
+  transition: all 500ms ease-in;
+}
+
+.slide {
+  scroll-snap-align: start;
+  padding-top: 8rem;
+  width: 100vw;
+  min-height: 80vh;
+  align-content: center;
+  justify-items: center;
 }
 
 header img,
@@ -128,25 +168,57 @@ h4 {
 
 .projects {
   display: flex;
-  justify-content: center;
+  /* scroll-snap-type: x mandatory; */
+  overflow-x: contain;
+  flex-direction: row;
+  width: 100vw;
+  height: 88vh;
+  justify-content: space-around;
 }
 
 .projects div {
   cursor: pointer;
-  width: 33%;
-  margin: 1em;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding-bottom: 0;
-  min-width: 10rem;
+  /* min-width: 10rem; */
+  height: 75%;
+  /* height: 82vh; */
+  /* scroll-snap-align: start; */
+  align-content: center;
+  justify-items: center;
+
 }
 
 .projects img {
   border-radius: 10px;
-  width: auto;
-  height: 15rem;
+  width: 10rem;
+  height: auto;
 }
 
 .projects p {
   transition: all ease-in 2s;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 lightgray;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 lightgray;
+  width: 60%;
+}
+
+
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }
 
 #home {
