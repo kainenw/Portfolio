@@ -159,7 +159,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     @for $i from 1 through 4 {
-      @media screen and (max-width: 798px - $i*80) {
+      @media screen and (max-width: calc(798px - ($i*80px))) {
         min-width: 600px - $i * 80;
         .option:nth-child(#{6-$i}) {
           display: none;
