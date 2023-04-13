@@ -1,6 +1,6 @@
 * {
   font-weight: 400;
-  color: #DCE0F2;
+  color: #dce0f2;
   font-size: 16px;
   margin: 0;
   text-align: center;
@@ -31,7 +31,7 @@ body nav {
   width: 100%;
   position: fixed;
   z-index: 20;
-  border-bottom: 1px solid #DCE0F2;
+  border-bottom: 1px solid #dce0f2;
   transition: all ease-in-out 1s;
 }
 body nav #contact-link {
