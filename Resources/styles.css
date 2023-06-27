@@ -1,6 +1,7 @@
 * {
   font-weight: 400;
   color: #dce0f2;
+  /* mayb  rgb(189, 193, 198) */
   font-size: 16px;
   margin: 0;
   text-align: center;
@@ -15,7 +16,7 @@ body {
   overflow: hidden;
   height: 100vh;
   transition: 0.25s;
-  background-color: rgb(32, 54, 75);
+  background-color: #262626;
 }
 body ::-webkit-scrollbar {
   display: none;
@@ -45,7 +46,8 @@ body nav #contact-link {
   text-decoration: none;
 }
 body header {
-  background-image: url("Img/geometric-pattern.jpg");
+  background-image: url("./Img/DALL·E 2023-06-27 11.06.13 edited.png");
+  /* background-image: url("../DALL·E 2023-06-27 11.06.38 - a quirky, simple and repetitive grid pattern in the style of M. C. Escher, crisp edges.png"); */
   background-size: auto 30rem;
   background-repeat: repeat-x;
   height: 26rem;
@@ -111,6 +113,9 @@ body main .logos img {
   margin: 2rem;
 }
 body p {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 1rem;
   background-color: transparent;
   z-index: 20;
