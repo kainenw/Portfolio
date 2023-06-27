@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   height: 100vh;
   transition: 0.25s;
-  background-color: rgb(32, 54, 75);
+  background-color: #262626;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -44,7 +44,7 @@ body {
     }
   }
   header {
-    background-image: url("Img/geometric-pattern.jpg");
+    background-image: url("./Img/DALL·E\ 2023-06-27\ 11.06.13\ edited.png");
     background-size: auto 30rem;
     background-repeat: repeat-x;
     height: 26rem;
@@ -114,11 +114,12 @@ body {
     padding: 1rem;
     background-color: transparent;
     z-index: 20;
+    max-width: 650;
   }
   h1 {
     position: fixed;
     padding-left: 3rem;
-    background-color: rgba(32, 54, 75, 0.75);
+    background-color: inherit;
     min-width: 500px;
     font-family: "Ubuntu", sans-serif;
     text-align: left;
