@@ -16,12 +16,44 @@
     <nav><a href="index.html"><img id="icon" src="Resources/Img/k_icon.jpg" alt="K icon"></a></nav>
     <nav><a id="contact-link" href="contact.html">contact</a></nav>
 </header>
-<section>
-    <h1>Kainen White<br><span>Frontend Web Developer</span></h1>
-    <!-- <div id="headshot">
-        <img src="./Resources/Img/headshot.png" alt="Picture of Kainen" />
-    </div> -->
+<section id="top">
+  <h1 class="contrast">Kainen White<br /><span>Frontend Web Developer</span></h1>
 </section>
+<section class="slide about">
+  <img
+    id="headshot"
+    src="./Resources/Img/headshot.png"
+    alt="Picture of Kainen"
+  />
+        <h3 id="first" class="contrast">Hi there!</h3>
+        <p>
+          I'm Kainen, a Nashville-based programmer with an interest in frontend
+          web development and music.
+          <!-- Over the past two years,
+            I have been teaching myself to code in HTML, CSS, JavaScript and
+            Python, using resources like MDN, codecademy, and w3schools. I have
+            become familiar the essential technologies of the web, along with
+            some very helpful frameworks such as React, Redux, jQuery, and
+            Bootstrap.I build aesthetic, responsive, interactive and accessible
+            websites and web applications. -->You can view my work and contact
+          info below. If you would like to work together, feel free to
+          <!-- <a href="./index.html#contact"> -->reach out<!-- </a> -->.
+        </p>
+        <div class="logos">
+          <!--<h3>Skills</h3>
+            <img src="Resources/Img/html_logo.png" class="logo" alt="HTML" />
+            <img src="Resources/Img/CSS_icon.png" class="logo" alt="CSS" />
+            <img src="Resources/Img/JS_logo.png" class="logo" alt="Javascript" />
+            <img src="Resources/Img/node_logo.png" class="logo" alt="Node" />
+            <img src="Resources/Img/mocha_logo.png" class="logo" alt="Mocha" />
+            <img src="Resources/Img/git_logo.png" class="logo" alt="Git" />
+            <img src="Resources/Img/jquery_logo.png" class="logo" alt="JQuery" />
+            <img src="Resources/Img/react_logo.png" class="logo" alt="React" />
+            <img src="Resources/Img/redux-react_logo.png" class="logo" alt="Redux" />
+            <img src="Resources/Img/angular_logo.png" alt="Angular">
+          <img src="Resources/Img/bootstrap_logo.png" alt="Bootstrap">-->
+        </div>
+      </section>
 <main>
     <h3>About me</h3>
     <p>My name is Kainen White. I am a frontend web developer based in Nashville, Tennessee. I build custom websites which are aesthetic, responsive, interactive and accessible. Over the past year, I have developed strong skills in HTML, CSS and Javascript. I am also familiar with web hosting, JS testing with mocha, Wordpress, git and GitHub. Feel free to reach out.</p>
@@ -35,34 +67,129 @@
         <img src="Resources/Img/git_logo.png" alt="Git">
         <img src="Resources/Img/github_logo.png" alt="GitHub">
         <img src="Resources/Img/react_logo.png" alt="React">
-        <!--<img src="Resources/Img/jquery_logo.jpg" alt="JQuery">
-        <img src="Resources/Img/angular_logo.png" alt="Angular">
         <img src="Resources/Img/redux-react_logo.jpg" alt="Redux">
+        <img src="Resources/Img/jquery_logo.jpg" alt="JQuery">
+        <!-- <img src="Resources/Img/angular_logo.png" alt="Angular">
         <img src="Resources/Img/bootstrap_logo.png" alt="Bootstrap">-->
     </div>
-    <h3>Reddit App</h3>
-    <!--<p>(click to view more about each project)</p>-->
-    <div id="proj0" class="projects">
-      <div class="project">
-            <a class="contrast" href="https://helpful-dolphin-455119.netlify.app"><h4>Savings Calculator</h4></a> 
-            <img src="./Resources/Img/scalc.jpg" alt="Reddit App Preview">
-            <p id="desc0" class="desc"><br><br> This project is the most difficult I have completed to date. During development, I lost significant progress more than once, which taught me some better practices when it comes to data storage. It also required an expansion of my project management skills since it was a big project, but the setbacks took a lot of momentum from me. So it took a lot of determination to actually get the project finished. This is a single page application built with React and Redux. React makes the site efficient and flexible. It uses API calls to the reddit .json API for home page, subreddit and search data. All data is centralized in one Redux store.
-        </div>
-        <div class="project">
-            <a class="contrast" href="https://kainenw.github.io/scalc/"><h4>Savings Calculator</h4></a> 
-            <img src="./Resources/Img/scalc.jpg" alt="Savings Calculator Preview">
-            <p id="desc1" class="desc"><br><br> This is a web application designed with HTML, CSS, and Javascript. The user inputs income and expenses, and the Javascript calculates how much remains and displays the result. All of the information is processed directly in the browser.
-        </div>
-        <!-- <div id="proj2" class="project">
+    <section id="projects" class="slide">
+      <!--<p>(click to view more about each project)</p>-->
+          <h3>Projects</h3>
+          <div id="proj0" class="projects">
+            <div class="project card">
+              <a
+                class="contrast"
+                href="https://helpful-dolphin-455119.netlify.app"
+                ><h4>Reddit App</h4></a
+              >
+              <img src="./Resources/Img/reddit.png" alt="Reddit App Preview" />
+              <p id="desc0" class="desc">
+                <br /><br />
+                This project is the most difficult I have completed to date.
+                During development, I lost significant progress more than once
+                due to device failure, which taught me better practices when it
+                comes to data storage. It also required me to improve my project
+                management skills. Since it was a big project, it took a lot of
+                determination to actually get the project finished. This is a
+                single page application built with React and Redux. React makes
+                the site efficient and flexible. It uses API calls to the reddit
+                .json API for home page, subreddit and search data. All data is
+                centralized in one Redux store.
+              </p>
+            </div>
+
+            <div class="project card">
+              <a class="contrast" href="https://kainenw.github.io/scalc/"
+                ><h4>Savings Calculator</h4></a
+              >
+              <img
+                src="./Resources/Img/scalc.png"
+                alt="Savings Calculator Preview"
+              />
+              <p id="desc1" class="desc">
+                <br /><br />
+                This was my first independent project with JavaScript. It was a
+                learn-as-you-go experience which was much harder to implement
+                than it was to design. This is a resource to jumpstart the
+                creation of a savings plan. I have made this spreadsheet so many
+                times that I decided to formalize it and make it accessable on
+                the web. It is built using HTML, CSS, and Javascript. The user
+                inputs income and expenses, and the Javascript calculates how
+                much remains and displays the result. I do have plans to make
+                the page better by adding an export ability. That way you can
+                continue with the spreadsheet on a program like excel or google
+                sheets.
+              </p>
+            </div>
+            <div class="project card">
+              <a class="contrast" href="https://kainenw.github.io/Tonnetz/"
+                ><h4>Tonnetz Transformations</h4></a
+              >
+              <img
+                src="./Resources/Img/TonnetzTorus.gif"
+                alt="Tonnetz Preview"
+              />
+              <p id="desc2" class="desc">
+                <br /><br />
+                This is a music theory project that allows users to experiment
+                with different kinds of chord changes. The chord changes are
+                visualized on a grid, the tonnetz, which is a way to graphically
+                visualize chords. There are buttons for each unique chord
+                transformation that is possible within a neo-riemannean
+                cclassification system. It is designed with HTML, CSS, and
+                Javascript. It uses the html canvas, which was a small part of
+                the Tonnetz-Viz repo, which I have adapted to my own purposes
+                here. I have plans to allow the user to interact directly with
+                the grid by clicking on it. I will implement this with the html
+                canvas framework Konva.js.
+              </p>
+            </div>
+            <div class="project card">
+              <a
+                class="contrast"
+                href="https://github.com/kainenw/counterpoint/"
+                ><h4>Counterpoint</h4></a
+              >
+              <img
+                src="./Resources/Img/fux.png"
+                alt="Savings Calculator Preview"
+              />
+              <p id="desc3" class="desc">
+                <br /><br />
+                This is project that I started in order to formalize the rules
+                of counterpoint according to Johann Fux. At first, I programmed
+                it to find the one possible counter-melody with the fewest
+                leaps. After looking at some other projects with the same goal,
+                I realized I wanted to get every possible solution, so that I
+                could pick from them. I implemented this in a wildly ineficcient
+                way, using lists which had to be copied and split for each note
+                in the melody. This led me to rethink how to keep track of the
+                different valid solutions. I am currently restructuring the data
+                so that the different possibilies can be represented in a graph,
+                with each node on the graph corresponding to one possibity in
+                the counterpoint.
+              </p>
+            </div>
+
+            <!-- <div id="proj2" class="project card">
             <a class="contrast" href="https://kainenw.github.io/motiquotes/"><h4>MotiQuotes</h4></a>
             <img src="./Resources/Img/motiquotes.png" alt="Motiquotes Preview">                    
-            <p id="desc2" class="desc"><br><br> This motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.
-        </div>
-        <div id="proj3" class="project">
+            <p id="desc2" class="desc"><br><br> This motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.</p>
+          </div>
+          <div id="proj3" class="project card">
             <a class="contrast" href="https://kainenw.github.io/weathered/"><h4>Weathered</h4> </a>
             <img src="./Resources/Img/weathered.png" alt=" Weathered Preview">                      
             <p id="desc3" class="desc"><br><br> This React weather app is in the wee early stages of development. It gets data from two apis: api.weather.gov and geocode.maps.co It fetches the latitude and longitude of an address, then fetches an hour-by-hour forecast for the next 7 days. It then filters, formats, groups by day and displays the results.
             </p> -->
+            <!--project template
+          <div class="project">
+            <h4></h4> 
+            <img src="./Resources/Img/" alt=" Preview">                        
+            <p class="desc"><a class="contrast" href="https://kainenw.github.io/motiquotes/">Click here</a> to open this project.<br><br> 
+            </p>
+          </div> -->
+          </div>
+        </section>
         </div>
         <!--project template
             <div class="project">
