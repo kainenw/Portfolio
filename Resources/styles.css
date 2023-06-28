@@ -111,6 +111,22 @@ body main .logos img {
   height: 3rem;
   margin: 2rem;
 }
+body form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body form button {
+  width: 7rem;
+}
+body form input,
+body form textarea,
+body form button {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
 body p {
   padding: 1rem;
   background-color: transparent;

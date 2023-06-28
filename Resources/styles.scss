@@ -77,7 +77,7 @@ body {
     overflow-x: hidden;
     display: flex;
     position: relative;
-    /*     top: 8rem; */
+    /* top: 8rem; */
     flex-direction: column;
     width: 98vw;
     height: 100vh;
@@ -110,11 +110,27 @@ body {
       }
     }
   }
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    button {
+      width: 7rem;
+    }
+    input,
+    textarea,
+    button {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+  }
   p {
     padding: 1rem;
     background-color: transparent;
     z-index: 20;
-    max-width: 650;
+    max-width: 500;
   }
   h1 {
     position: fixed;
