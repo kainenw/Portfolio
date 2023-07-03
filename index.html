@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="Resources/styles.css" rel="stylesheet" />
+    <link href="src/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,63 +15,113 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <!-- <nav>
-      <a href="index.html"><img id="icon" src="Resources/Img/k_icon.png" alt="K icon"></a>
-      <a id="contact-link" href="contact.html">contact</a>
-    </nav> -->
-
-    <main id="slide-container">
-      <!-- <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
-        &#10095;
-      </button> -->
-
-      <section class="slide about">
-        <header>
-          <!-- <h1 class="contrast">Kainen White<br /><span>Frontend Web Developer</span></h1> -->
-          <img
-            id="headshot"
-            src="./Resources/Img/headshot.png"
-            alt="Picture of Kainen"
-          />
-        </header>
-        <h3 id="first" class="contrast">Hi there!</h3>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="src/Img/dark/k_icon.png" alt="K icon" class="dark" />
+          <img src="src/Img/light/k_icon.png" alt="K icon" class="light" />
+        </a>
+        <img
+          src="src/Img/dark/dark-icon.png"
+          alt="switch light/dark mode"
+          id="toggle-light"
+        />
+        <a href="contact.html" id="contact">contact</a>
+      </nav>
+    </header>
+    <section id="top">
+      <div id="glass">
+        <h1 class="contrast">
+          Kainen White<br /><span>Frontend Web Developer</span>
+        </h1>
+      </div>
+    </section>
+    <main>
+      <section class="about">
+        <img
+          id="headshot"
+          src="./src/Img/headshot.png"
+          alt="Picture of Kainen"
+        />
+        <h2 id="first" class="contrast">Hi there!</h2>
         <p>
           I'm Kainen, a Nashville-based programmer with an interest in frontend
-          web development and music.
-          <!-- Over the past two years,
-            I have been teaching myself to code in HTML, CSS, JavaScript and
-            Python, using resources like MDN, codecademy, and w3schools. I have
-            become familiar the essential technologies of the web, along with
-            some very helpful frameworks such as React, Redux, jQuery, and
-            Bootstrap.I build aesthetic, responsive, interactive and accessible
-            websites and web applications. -->You can view my work and contact
-          info below. If you would like to work together, feel free to
-          <!-- <a href="./index.html#contact"> -->reach out<!-- </a> -->.
+          web development and music. You can view my work below and contact info
+          in the top right. If you would like to work together, feel free to
+          <a href="contact.html">reach out</a>.
         </p>
-        <div class="logos">
-          <!--<h3>Skills</h3>
-            <img src="Resources/Img/html_logo.png" class="logo" alt="HTML" />
-            <img src="Resources/Img/CSS_icon.png" class="logo" alt="CSS" />
-            <img src="Resources/Img/JS_logo.png" class="logo" alt="Javascript" />
-            <img src="Resources/Img/node_logo.png" class="logo" alt="Node" />
-            <img src="Resources/Img/mocha_logo.png" class="logo" alt="Mocha" />
-            <img src="Resources/Img/git_logo.png" class="logo" alt="Git" />
-            <img src="Resources/Img/jquery_logo.png" class="logo" alt="JQuery" />
-            <img src="Resources/Img/react_logo.png" class="logo" alt="React" />
-            <img src="Resources/Img/redux-react_logo.png" class="logo" alt="Redux" />
-            <img src="Resources/Img/angular_logo.png" alt="Angular">
-          <img src="Resources/Img/bootstrap_logo.png" alt="Bootstrap">-->
-        </div>
       </section>
-      <section class="slide projects">
-        <h3 class="contrast">Projects</h3>
-        <div class="options">
-          <div
-            class="option active"
-            style="background-image: url(./Resources/Img/reddit_thumbnail.jpg)"
-          >
-            <p>
-              <br />
+      <h2>About me</h2>
+      <p>
+        Over the past 2+ years, I have been teaching myself to code in HTML,
+        CSS, JavaScript and Python, using resources like MDN, codecademy, and
+        w3schools. I have become familiar the essential technologies of the web,
+        along with some very helpful frameworks such as React, Redux, jQuery,
+        and Bootstrap. I build aesthetic, responsive, interactive and accessible
+        websites and web applications.
+      </p>
+      <div class="logos dark">
+        <!--<h2>Skills</h2>-->
+        <img src="./src/Img/dark/html_logo.png" alt="HTML" class="dark" />
+        <img src="./src/Img/dark/CSS_icon.png" alt="CSS" class="dark" />
+        <img src="src/Img/dark/JS_logo.png" alt="Javascript" class="dark" />
+        <img src="src/Img/dark/node_logo.png" alt="Node" class="dark" />
+        <img src="src/Img/dark/mocha_logo.png" alt="Mocha" class="dark" />
+        <img src="src/Img/dark/git_logo.png" alt="Git" class="dark" />
+        <img src="src/Img/dark/github_logo.png" alt="GitHub" class="dark" />
+        <img src="src/Img/dark/react_logo.png" alt="React" class="dark" />
+        <img src="src/Img/dark/redux-react_logo.png" alt="Redux" class="dark" />
+        <img src="src/Img/dark/jquery_logo.png" alt="JQuery" class="dark" />
+        <!-- <img src="src/Img/dark/angular_logo.png" alt="Angular" class="dark">
+        <img src="src/Img/dark/bootstrap_logo.png" alt="Bootstrap" class="dark">-->
+      </div>
+      <div class="logos">
+        <!--<h2>Skills</h2>-->
+        <img src="./src/Img/light/html_logo.png" alt="HTML" class="light" />
+        <img src="./src/Img/light/CSS_icon.png" alt="CSS" class="light" />
+        <img src="src/Img/light/JS_logo.png" alt="Javascript" class="light" />
+        <img src="src/Img/light/node_logo.png" alt="Node" class="light" />
+        <img src="src/Img/light/mocha_logo.png" alt="Mocha" class="light" />
+        <img src="src/Img/light/git_logo.png" alt="Git" class="light" />
+        <img src="src/Img/light/github_logo.png" alt="GitHub" class="light" />
+        <img src="src/Img/light/react_logo.png" alt="React" class="light" />
+        <img
+          src="src/Img/light/redux-react_logo.png"
+          alt="Redux"
+          class="light"
+        />
+        <img src="src/Img/light/jquery_logo.png" alt="JQuery" class="light" />
+        <!-- <img src="src/Img/light/angular_logo.png" alt="Angular" class="light">
+        <img src="src/Img/light/bootstrap_logo.png" alt="Bootstrap" class="light">-->
+      </div>
+      <section id="projects">
+        <!--<p>(click to view more about each project)</p>-->
+        <h2>Projects</h2>
+        <div id="project-menu">
+          <button class="active" value="0">Reddit App</button>
+          <button value="1">sCalc</button>
+          <button value="2">Tonnetz</button>
+          <button value="3">Counterpoint</button>
+        </div>
+        <div class="projects">
+          <div class="project active">
+            <a
+              class="contrast"
+              href="https://helpful-dolphin-455119.netlify.app"
+            >
+              <h3>Reddit App</h3>
+            </a>
+            <img
+              src="./src/Img/dark/reddit.png"
+              alt="Reddit App Preview"
+              class="dark"
+            />
+            <img
+              src="./src/Img/light/reddit.png"
+              alt="Reddit App Preview"
+              class="light"
+            />
+            <p id="desc0" class="desc">
               This project is the most difficult I have completed to date.
               During development, I lost significant progress more than once due
               to device failure, which taught me better practices when it comes
@@ -83,46 +133,22 @@
               .json API for home page, subreddit and search data. All data is
               centralized in one Redux store.
             </p>
-            <!-- <img src="Resources/Img/CSS_icon.png" class="logo" alt="CSS" />
-              <img
-                src="Resources/Img/JS_logo.png"
-                class="logo"
-                alt="Javascript"
-              />
-              <img src="Resources/Img/node_logo.png" class="logo" alt="Node" />
-              <img
-                src="Resources/Img/react_logo.png"
-                class="logo"
-                alt="React"
-              />
-              <img
-                src="Resources/Img/redux-react_logo.png"
-                class="logo"
-                alt="Redux"
-              />-->
-            <div class="shadow"></div>
-            <div class="label">
-              <img
-                class="icon"
-                src="./Resources/Img/reddit.png"
-                alt="Reddit Logo"
-              />
-              <div class="info">
-                <div class="main">
-                  <a href="https://helpful-dolphin-455119.netlify.app"
-                    >Reddit
-                  </a>
-                </div>
-                <div class="sub">Built with React and Redux</div>
-              </div>
-            </div>
           </div>
-          <div
-            class="option"
-            style="background-image: url(./Resources/Img/scalc_thumbnail.jpg)"
-          >
-            <p>
-              <br />
+          <div class="project">
+            <a href="https://kainenw.github.io/scalc/">
+              <h3>sCalc</h3>
+            </a>
+            <img
+              src="./src/Img/dark/scalc.png"
+              alt="Savings Calculator Preview"
+              class="dark"
+            />
+            <img
+              src="./src/Img/light/scalc.png"
+              alt="Savings Calculator Preview"
+              class="light"
+            />
+            <p id="desc1" class="desc">
               This was my first independent project with JavaScript. It was a
               learn-as-you-go experience which was much harder to implement than
               it was to design. This is a resource to jumpstart the creation of
@@ -134,47 +160,13 @@
               adding an export ability. That way you can continue with the
               spreadsheet on a program like excel or google sheets.
             </p>
-            <!-- <<img src="Resources/Img/html_logo.png" class="logo" alt="HTML" />
-              <img src="Resources/Img/CSS_icon.png" class="logo" alt="CSS" />
-              <img
-                src="Resources/Img/JS_logo.png"
-                class="logo"
-                alt="Javascript"
-              />
-              <img src="Resources/Img/node_logo.png" class="logo" alt="Node" />
-              <img src="Resources/Img/git_logo.png" class="logo" alt="Git" />
-              <img
-                src="Resources/Img/jquery_logo.png"
-                class="logo"
-                alt="JQuery"
-              />
-              <img src="Resources/Img/git_logo.png" class="logo" alt="Git" />
-              <img
-                src="Resources/Img/mocha_logo.png"
-                class="logo"
-                alt="Mocha"
-              />-->
-            <div class="shadow"></div>
-            <div class="label">
-              <img
-                class="icon"
-                src="./Resources/Img/scalc.png"
-                alt="Reddit Logo"
-              />
-              <div class="info">
-                <div class="main">
-                  <a href="https://kainenw.github.io/scalc/">SCalc</a>
-                </div>
-                <div class="sub">A savings calculator built with jQuery</div>
-              </div>
-            </div>
           </div>
-          <div
-            class="option"
-            style="background-image: url(./Resources/Img/Tonnetz_thumnail.jpg)"
-          >
-            <p>
-              <br />
+          <div class="project">
+            <a href="https://kainenw.github.io/Tonnetz/">
+              <h3>Tonnetz</h3>
+            </a>
+            <img src="./src/Img/TonnetzTorus.gif" alt="Tonnetz Preview" />
+            <p id="desc2" class="desc">
               This is a music theory project that allows users to experiment
               with different kinds of chord changes. The chord changes are
               visualized on a grid, the tonnetz, which is a way to graphically
@@ -187,139 +179,59 @@
               clicking on it. I will implement this with the html canvas
               framework Konva.js.
             </p>
-            <!-- <img src="Resources/Img/html_logo.png" class="logo" alt="HTML" />
-              <img src="Resources/Img/CSS_icon.png" class="logo" alt="CSS" />
-              <img
-                src="Resources/Img/JS_logo.png"
-                class="logo"
-                alt="Javascript"
-              />
-              <img src="Resources/Img/node_logo.png" class="logo" alt="Node" />
-              <img
-                src="Resources/Img/bootstrap_logo.png"
-                class="logo"
-                alt="Bootstrap"
-              />
-              <img src="Resources/Img/git_logo.png" class="logo" alt="Git" />-->
-            <div class="shadow"></div>
-            <div class="label">
-              <img
-                class="icon"
-                src="./Resources/Img/TonnetzTorus.gif"
-                alt="Reddit Logo"
-              />
-              <div class="info">
-                <div class="main">
-                  <a href="https://kainenw.github.io/Tonnetz/">Tonnetz</a>
-                </div>
-                <div class="sub">A chord visualization app.</div>
-              </div>
-            </div>
           </div>
-          <div
-            class="option"
-            style="
-              background-image: url(./Resources/Img/counterpoint_thumbnail.JPG);
-            "
-          >
-            <p>
-              <br />
-              This is a project that I started in order to generate lines of
-              counterpoint according to the rules of Johann Fux. I have started
-              with Fux's rules because they are the simplest and most clearly
-              defined. At first, I programmed it to find the one possible
-              counter-melody with the fewest leaps. After looking at some other
-              projects with the same goal, I realized I wanted to get every
-              solution and pick between them. I implemented this in a wildly
-              ineficcient way, using lists which had to be copied and split for
-              each note in the melody. This led me to rethink how to keep track
-              of the different valid solutions. I am currently restructuring the
-              data so that the different possibilies can be represented in a
-              graph, with each node on the graph corresponding to one
-              possibility for the counterpoint.
+          <div class="project">
+            <a href="https://github.com/kainenw/counterpoint/">
+              <h3>Counterpoint</h3>
+            </a>
+            <img src="./src/Img/fux.png" alt="Savings Calculator Preview" />
+            <p id="desc3" class="desc">
+              This is project that I started in order to formalize the rules of
+              counterpoint according to Johann Fux. At first, I programmed it to
+              find the one possible counter-melody with the fewest leaps. After
+              looking at some other projects with the same goal, I realized I
+              wanted to get every possible solution, so that I could pick from
+              them. I implemented this in a wildly ineficcient way, using lists
+              which had to be copied and split for each note in the melody. This
+              led me to rethink how to keep track of the different valid
+              solutions. I am currently restructuring the data so that the
+              different possibilies can be represented in a graph, with each
+              node on the graph corresponding to one possibity in the
+              counterpoint.
             </p>
-            <div class="shadow"></div>
-            <div class="label">
-              <img
-                class="icon"
-                src="./Resources/Img/fux.png"
-                alt="Reddit Logo"
-              />
-              <div class="info">
-                <div class="main">
-                  <a href="https://github.com/kainenw/counterpoint/"
-                    >Counterpoint</a
-                  >
-                </div>
-                <div class="sub">Generates counterpoint to a melody.</div>
-              </div>
-            </div>
           </div>
-          <div
-            class="option"
-            style="
-              --optionBackground: url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);
-              visibility: hidden;
-            "
-          >
-            <div class="shadow"></div>
-            <div class="label">
-              <img class="icon" src="..." alt="Reddit Logo" />
-              <div class="info">
-                <div class="main">
-                  <a href="https://kainenw.github.io/Tonnetz/">Tonnetz</a>
-                </div>
-                <div class="sub">A chord visualization app.</div>
-              </div>
-            </div>
-          </div>
+
+          <!-- <div id="proj2" class="project">
+      <a href="https://kainenw.github.io/motiquotes/"><h3>MotiQuotes</h3></a>
+      <img src="./src/Img/motiquotes.png" alt="Motiquotes Preview">                    
+      <p id="desc2" class="desc">This motivational quote generator is built with Javascript, CSS and HTML. I used Python to pull and save 12,000 motivational quotes from goodreads. Then, it found the words mentioned more than 500 times and saved them to a new javascript file. It currently selects between 3 sentence structures, but I plan improve and expand them soon.</p>
+      </div>
+      <div id="proj3" class="project">
+      <a href="https://kainenw.github.io/weathered/"><h3>Weathered</h3> </a>
+      <img src="./src/Img/weathered.png" alt=" Weathered Preview">                      
+      <p id="desc3" class="desc">This React weather app is in the wee early stages of development. It gets data from two apis: api.weather.gov and geocode.maps.co It fetches the latitude and longitude of an address, then fetches an hour-by-hour forecast for the next 7 days. It then filters, formats, groups by day and displays the results.
+      </p> -->
+          <!--project template
+      <div class="project">
+      <h3></h3> 
+      <img src="./src/Img/" alt=" Preview">                        
+      <p class="desc"><a href="https://kainenw.github.io/motiquotes/">Click here</a> to open this project.
+      </p>
+      </div> -->
         </div>
-        <!--<a href="https://kainenw.github.io/motiquotes/">MotiQuotes</a>
-    <a href="https://kainenw.github.io/weathered/">Weathered</a> -->
       </section>
-      <section id="contacts" class="slide">
-        <h3 class="contrast">Let's stay in touch!</h3>
-        <div class="logos">
-          <a href="https://www.linkedin.com/in/kainen-w-0612ab12b/"
-            ><img
-              src="Resources/Img/linkedin_logo.png"
-              class="logo"
-              alt="LinkedIn Icon"
-          /></a>
-          <a href="https://www.instagram.com/kainenw/"
-            ><img
-              src="Resources/Img/instagram_logo.png"
-              class="logo"
-              alt="Intagram Icon"
-          /></a>
-          <a href="https://github.com/kainenw"
-            ><img
-              id="github"
-              src="Resources/Img/github_logo.png"
-              class="logo"
-              alt="Github Icon"
-          /></a>
-          <a href="mailto:kainen.white@gmail.com"
-            ><img
-              src="./Resources/Img/email-icon.png"
-              class="logo"
-              alt="Email Icon"
-          /></a>
-          <!-- <a href=""><img src="./Resources/Img/1200px-Discord_logo.svg.png" alt="Discord Icon"></a> -->
-          <form action="https://formspree.io/f/mwkdeqnl" method="POST" \>
-            <input type="name" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Message"></textarea>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
-          </form>
-        </div>
-        <footer>
-          View my code on
-          <a href="https://github.com/kainenw" class="contrast">GitHub</a>
-        </footer>
-      </section>
+      <!--project template
+      <div class="project">
+      <h3></h3> 
+      <img src="./src/Img/" alt=" Preview">                        
+      <p class="desc"><a href="https://kainenw.github.io/motiquotes/">Click here</a> to open this project.
+      </p>
+    </div> -->
+      <footer>
+        View my code on
+        <a href="https://github.com/kainenw">GitHub</a>
+      </footer>
     </main>
   </body>
-  <script src="Resources/portfolio.js"></script>
+  <script src="src/index.js"></script>
 </html>

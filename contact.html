@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="Resources/styles.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Titillium+Web:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">   
-  <title>Contact</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-<header id="nav-bar">
-  <nav>
-    <a href="index.html" id="home-link" >home</a>
-    <a href="projects.html" id="projects-link" >projects</a>
-    <!-- <a href="blog.html">blog</a> -->
-    <a href="contact.html" id="contact-link" >contact</a>
-  </nav>
-</header>
-  <section>
-    <h1>Kainen White<br><span>Frontend Web Developer</span></h1>
-    <img src="./Resources/Img/headshot.png" alt="Picture of Kainen" />
-  </section>
-<main>
-  <div class="logos">
-    <h3>Let's stay in touch!</h3>
-    <a href="https://www.linkedin.com/in/kainen-w-0612ab12b/"><img src="Resources/Img/linkedin_logo.png" alt="LinkedIn Icon"></a>
-    <a href="https://www.instagram.com/kainenw/"><img src="Resources/Img/instagram_logo.png" alt="Intagram Icon"></a>
-    <a href="https://github.com/kainenw"><img id="github" src="Resources/Img/github_logo.png" class="github" alt="Github Icon"></a>
-    <!-- <a href=""><img src="./Resources/Img/1200px-Discord_logo.svg.png" alt="Discord Icon"></a> -->
-    <a href="mailto:kainen.white@gmail.com"><img src="./Resources/Img/email-icon.png" alt="Email Icon"></a>
-  </div>
-  <!--add headshot
-    <div id="img">
-    <img src="#" alt="Picture of Kainen" /> -->
-</main>
-<script src="Resources/portfolio.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Titillium+Web:wght@600&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="src/Img/dark/k_icon.png" alt="K icon" class="dark" />
+          <img src="src/Img/light/k_icon.png" alt="K icon" class="light" />
+        </a>
+        <img
+          src="src/Img/dark/dark-icon.png"
+          alt="switch light/dark mode"
+          id="toggle-light"
+        />
+        <a href="contact.html" id="contact">contact</a>
+      </nav>
+    </header>
+    <section id="top">
+      <h1>
+        Kainen White<br />
+        <span>Frontend Web Developer</span>
+      </h1>
+    </section>
+    <main>
+      <section id="contacts" class="slide">
+        <h3 class="contrast">Let's stay in touch!</h3>
+        <div class="logos">
+          <a href="https://www.linkedin.com/in/kainen-w-0612ab12b/"
+            ><img
+              src="src/Img/linkedin_logo.png"
+              class="logo"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://www.instagram.com/kainenw/"
+            ><img
+              src="src/Img/instagram_logo.png"
+              class="logo"
+              alt="Intagram Icon"
+          /></a>
+          <a href="https://github.com/kainenw"
+            ><img
+              id="github"
+              src="src/Img/dark/github_logo.png"
+              class="logo dark"
+              alt="Github Icon"
+            /><img
+              id="github"
+              src="src/Img/light/github_logo.png"
+              class="logo light"
+              alt="Github Icon"
+            />
+          </a>
+          <a href="mailto:kainen.white@gmail.com"
+            ><img
+              src="src/Img/dark/email-icon.png"
+              class="logo dark"
+              alt="Email Icon"
+            /><img
+              src="src/Img/light/email-icon.png"
+              class="logo light"
+              alt="Email Icon"
+            />
+          </a>
+          <!-- <a href=""><img src="./Resources/Img/1200px-Discord_logo.svg.png" alt="Discord Icon"></a> -->
+          <form action="https://formspree.io/f/mwkdeqnl" method="POST" \>
+            <input type="name" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
 </html>

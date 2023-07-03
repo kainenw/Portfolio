@@ -1,5 +1,9 @@
 {
+  "name": "portfolio-site",
   "dependencies": {
     "jquery": "^3.6.1"
+  },
+  "scripts": {
+    "sass": "sass --watch src/styles.scss src/styles.css"
   }
 }

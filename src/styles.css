@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* Color Theme Swatches in Hex */
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #f2f2eb;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  color: inherit;
+}
+
+img.dark {
+  display: content;
+}
+
+img.light {
+  display: none;
+}
+
+body,
+h1 {
+  background-color: #262626;
+  color: #f2f2eb;
+}
+
+header {
+  background-color: inherit;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  border-bottom: 1px solid #f2f2eb;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin: 0 3rem;
+}
+header nav img,
+header nav a {
+  height: 2rem;
+  font-size: 1.5rem;
+}
+header #toggle-light {
+  /* transition: 1s linear; */
+}
+header #toggle-light:hover {
+  cursor: pointer;
+}
+
+.icon {
+  float: left;
+  cursor: pointer;
+  z-index: 10;
+  padding-left: 4rem;
+  height: 4rem;
+}
+
+section#top {
+  background-image: url("./Img/DALL·E 2023-06-27 11.06.13 edited.png");
+  background-size: auto 30rem;
+  border-bottom: 1px solid #f2f2eb;
+  background-repeat: repeat-x;
+  height: 26rem;
+  position: sticky;
+  top: -16rem;
+  padding-top: 4rem;
+  z-index: 20;
+  min-width: 550px;
+}
+section#top h1 {
+  position: fixed;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  opacity: 0.9;
+  min-width: 500px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: left;
+  font-weight: 700;
+  font-size: 4rem;
+  top: 4rem;
+  height: 7.9rem;
+}
+section#top h1 span {
+  color: inherit;
+  text-align: inherit;
+  display: block;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: rgb(233, 141, 24);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+section img {
+  border-radius: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: right;
+  height: 10rem;
+  width: auto;
+  z-index: 10;
+}
+
+p {
+  padding-top: 1rem;
+  z-index: 20;
+  font-size: 1em;
+}
+
+#github {
+  border-radius: 100%;
+}
+
+h2 {
+  padding-top: 3rem;
+  font-size: 26px;
+  font-size: 2em;
+}
+
+div#project-menu {
+  padding-top: 1rem;
+  display: inline-flexbox;
+}
+div#project-menu button {
+  border: 2px solid #f2f2eb;
+  background-color: #262626;
+  color: #f2f2eb;
+}
+div#project-menu button:hover {
+  cursor: pointer;
+}
+div#project-menu .active {
+  border: 2px solid #262626;
+  background-color: #f2f2eb;
+  color: #262626;
+}
+
+h3 {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.5em;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+.projects div {
+  display: none;
+}
+.projects .active {
+  display: block;
+  margin: 1em;
+  padding-bottom: 0;
+  min-width: 10rem;
+}
+.projects img {
+  border-radius: 15%;
+}
+
+.logos {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: space space-between;
+}
+.logos img {
+  height: 3rem;
+  margin: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form textarea,
+form button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+form button {
+  color: #737372;
+  width: 4rem;
+}
+
+footer {
+  padding: 4rem;
+}
+
+a:hover,
+h4:hover {
+  color: inherit;
+}
+
+body.light {
+  background-color: #f2f2eb;
+  color: #262626;
+}
+body.light h1 {
+  background-color: #f2f2eb;
+}
+body.light header,
+body.light section#top {
+  border-bottom: 1px solid #262626;
+}
+body.light img.light {
+  display: inline;
+}
+body.light img.dark {
+  display: none;
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    width: 100%;
+  }
+  h1 {
+    padding: 0;
+    padding-top: 1rem;
+    width: 100%;
+    font-size: 3rem;
+    margin-right: auto;
+  }
+  h1 span {
+    font-size: 2rem;
+  }
+  .projects div {
+    width: 90%;
+  }
+  .icon {
+    padding-left: 0;
+  }
+  #contact-link {
+    padding-right: 1rem;
+  }
+  .projects {
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+  }
+  .project {
+    width: 100%;
+    min-width: 550px;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
