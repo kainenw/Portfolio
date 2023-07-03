@@ -50,21 +50,11 @@ header {
       font-size: 1.5rem;
     }
   }
-  #toggle-light {
-    /* transition: 1s linear; */
-  }
   #toggle-light:hover {
     cursor: pointer;
   }
 }
 
-.icon {
-  float: left;
-  cursor: pointer;
-  z-index: 10;
-  padding-left: 4rem;
-  height: 4rem;
-}
 
 section#top {
   background-image: url("./Img/DALL·E 2023-06-27 11.06.13 edited.png");
@@ -112,11 +102,31 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+h4:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 main {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
+  padding-top: 2rem;
+  h2 {
+    padding-top: 3rem;
+    font-size: 26px;
+    font-size: 2em;
+  }
+  .icon {
+    float: left;
+    cursor: pointer;
+    z-index: 10;
+    padding-left: 4rem;
+    height: 4rem;
+  }
 }
 
 section img {
@@ -133,16 +143,6 @@ p {
   padding-top: 1rem;
   z-index: 20;
   font-size: 1em;
-}
-
-#github {
-  border-radius: 100%;
-}
-
-h2 {
-  padding-top: 3rem;
-  font-size: 26px;
-  font-size: 2em;
 }
 
 div#project-menu {
@@ -196,7 +196,7 @@ h3 {
   }
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   input,
@@ -214,11 +214,6 @@ form{
 
 footer {
   padding: 4rem;
-}
-
-a:hover,
-h4:hover {
-  color: inherit;
 }
 
 body.light {
