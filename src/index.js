@@ -1,10 +1,10 @@
 const queryString = window.location.href;
 // change from 'index.html' to 'projects.html' if the projects section is moved
-const isHome = queryString.includes("index.html");
+const isHome = queryString.includes("contact.html");
 console.log(queryString);
-console.log(isHome);
+console.log(!isHome);
 
-if (isHome) {
+if (!isHome) {
   let projectMenu = document.getElementById("project-menu");
   const buttons = projectMenu.querySelectorAll("button");
 
