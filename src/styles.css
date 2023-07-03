@@ -88,7 +88,7 @@ h1,
 h2,
 h3,
 a {
-  color: rgb(233, 141, 24);
+  color: #e85328;
 }
 
 a {
@@ -209,11 +209,8 @@ footer {
 }
 
 body.light {
-  background-color: #f2f2eb;
+  background-color: #bfbfba;
   color: #262626;
-}
-body.light h1 {
-  background-color: #f2f2eb;
 }
 body.light header,
 body.light section#top {
