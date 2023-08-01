@@ -17,37 +17,42 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">
-          <img src="src/Img/dark/k_icon.png" alt="K" class="dark" />
-          <img src="src/Img/light/k_icon.png" alt="K" class="light" />
+        <a href="index.html" class="orange">
+          home
+          <!-- <img src="src/Img/dark/k_icon.png" alt="K icon" class="dark" />
+          <img src="src/Img/light/k_icon.png" alt="K icon" class="light" /> -->
         </a>
-        <img
-          src="src/Img/dark/dark-icon.png"
-          alt="switch light/dark mode"
-          id="toggle-light"
-        />
-        <a href="contact.html" id="contact">contact</a>
+        <div id="toggle-light">
+          <img
+            src="src/Img/dark/dark-icon.png"
+            alt="switch light/dark mode"
+            class="dark"
+          />
+          <img
+            src="src/Img/light/light-icon.png"
+            alt="switch light/dark mode"
+            class="light"
+          />
+        </div>
+        <a href="contact.html" class="orange">contact</a>
       </nav>
     </header>
-    <section id="top">
+    <div id="top"></div>
+    <!-- <section id="top">
       <div id="glass">
-        <h1 class="contrast">
+        <h1 class="orange">
           Kainen White<br /><span>Frontend Web Developer</span>
         </h1>
       </div>
-    </section>
+    </section> -->
+    <img id="headshot" src="./src/Img/headshot.png" alt="headshot" />
     <main>
-      <section class="about">
-        <img
-          id="headshot"
-          src="./src/Img/headshot.png"
-          alt="Picture of Kainen"
-        />
-        <h2 id="first" class="contrast">Hi there!</h2>
+      <section>
+        <h2 id="first" class="orange">Hi there!</h2>
         <p>
-          I'm Kainen, a Nashville-based programmer with an interest in frontend
-          web development and music. You can view my work below and contact info
-          in the top right. If you would like to work together, feel free to
+          I'm Kainen, a Nashville-based frontend web developer. You can view my
+          work below and contact info in the top right. If you would like to
+          work together, feel free to
           <a href="contact.html">reach out</a>.
         </p>
       </section>
@@ -98,17 +103,16 @@
         <!--<p>(click to view more about each project)</p>-->
         <h2>Projects</h2>
         <div id="project-menu">
-          <button class="active" value="0">Reddit App</button>
-          <button value="1">sCalc</button>
-          <button value="2">Tonnetz</button>
-          <button value="3">Counterpoint</button>
+          <button class="active project-button" id="first-button" value="1">
+            Reddit App
+          </button>
+          <button class="project-button" value="2">sCalc</button>
+          <button class="project-button" value="3">Tonnetz</button>
+          <button class="project-button" value="4">Counterpoint</button>
         </div>
         <div class="projects">
           <div class="project active">
-            <a
-              class="contrast"
-              href="https://helpful-dolphin-455119.netlify.app"
-            >
+            <a class="orange" href="https://helpful-dolphin-455119.netlify.app">
               <h3>Reddit App</h3>
             </a>
             <img
@@ -233,5 +237,5 @@
       </footer>
     </main>
   </body>
-  <script src="src/index.js"></script>
+  <script src="./src/index.js"></script>
 </html>
