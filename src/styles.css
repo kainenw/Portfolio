@@ -3,15 +3,16 @@
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   color: #f2f2eb;
-  font-size: 16px;
   margin: 0;
   text-align: center;
   text-decoration: none;
 }
 
 body {
+  all: unset;
+  display: block;
+  position: static;
   background-color: #262626;
-  color: light;
 }
 body h1,
 body h2,
@@ -82,25 +83,21 @@ div#top h1 span {
   font-size: 2rem;
 }
 
-main,
-header,
-nav,
-div,
-a:hover,
-h4:hover {
-  color: inherit;
-}
-
 main {
-  color: inherit;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
 }
 main h2 {
-  font-size: 26px;
-  font-size: 2em;
+  font-size: 2rem;
+}
+main h3 {
+  font-size: 1.5em;
+}
+main h2,
+main h3 {
+  margin: 2rem 0 0.5rem 0;
 }
 main .icon {
   float: left;
@@ -111,14 +108,10 @@ main .icon {
 
 img#headshot {
   border-radius: 15%;
-  margin-left: auto;
-  margin-right: auto;
   justify-self: right;
   height: 10rem;
   width: auto;
   z-index: 10;
-  margin-bottom: 4rem;
-  margin-bottom: 4rem;
   margin: 2rem auto;
 }
 
@@ -139,12 +132,6 @@ div#project-menu button {
 }
 div#project-menu button:hover {
   cursor: pointer;
-}
-
-h2,
-h3 {
-  margin: 2rem 0 0.5rem 0;
-  font-size: 1.5em;
 }
 
 .projects {

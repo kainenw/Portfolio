@@ -35,6 +35,8 @@ light.hide();
 
 const toggle = () => {
   if (darkMode) {
+    const hide = dark
+    const show = light
     hideShow(dark, light);
     body.css("background-color", "rgb(191,191,186)");
     body.css("color", "rgb(38,38,38)");
