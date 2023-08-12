@@ -8,9 +8,9 @@ $background-dark: #262626;
 $dark: #262626;
 
 * {
-  
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   color: $light;
   margin: 0;
   text-align: center;
@@ -21,7 +21,40 @@ body {
   all: unset;
   display: block;
   position: static;
+  min-height: 100vh;
+  background-image: url("./Img/background.png");
+  background-size: auto 30rem;
+  background-repeat: repeat;
   background-color: $background-dark;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  &[data-theme="dark"] {
+    header,
+    main {
+      background-color: rgb(191,191,186);
+      color: rgb(38,38,38);
+    }
+    p,
+    footer {
+      color: rgb(38,38,38)
+    }
+  }
+  &[data-theme="light"] {
+    header,
+    main {
+      background-color: $background-dark;
+      color: rgb(191,191,186);
+    }
+    p,
+    footer {
+      color: #f2f2eb
+    }
+  }
   h1,
   h2,
   h3,
@@ -58,17 +91,14 @@ header {
   }
 }
 
-div#top {
-  background-image: url("./Img/background.png");
-  background-size: auto 30rem;
-  border-bottom: 1px solid $dark;
-  background-repeat: repeat-x;
-  height: 26rem;
-  position: sticky;
-  top: -16rem;
+section#top {
+  /* border-bottom: 1px solid $dark;
+  height: 26rem; */
+  /* position: sticky; */
+  /* top: -16rem; */
   padding-top: 4rem;
-  z-index: 20;
-  min-width: 550px;
+  /* z-index: 20;
+  min-width: 550px; */
   h1 {
     position: fixed;
     padding-top: 1rem;
@@ -94,7 +124,8 @@ div#top {
 }
 
 main {
-  max-width: 600px;
+  min-height: 100vh;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
@@ -106,13 +137,20 @@ main {
   }
   h2,
   h3 {
-    margin: 2rem 0 0.5rem 0;
+    margin: 6rem 0 0.5rem 0;
   }
   .icon {
     float: left;
     cursor: pointer;
     z-index: 10;
     height: 4rem;
+  }
+  h2,
+  p,
+  div {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -123,6 +161,7 @@ img#headshot {
   width: auto;
   z-index: 10;
   margin: 2rem auto;
+  margin-bottom: 0;
 }
 
 p {
@@ -163,7 +202,7 @@ div#project-menu {
   }
 }
 
-.logos {
+.icons {
   display: flexbox;
   flex-direction: row;
   justify-content: space space-between;

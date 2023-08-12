@@ -20,9 +20,6 @@ const hideShow = (hide, show) => {
 
 // TODO #top border change
 
-// toggle dark/light mode
-let darkMode = true;
-
 const body = $("body");
 const p = $("p");
 const footer = $("footer");
@@ -31,29 +28,21 @@ const header = $("header");
 const toggleLight = $("#toggle-light");
 const light = $(".light");
 const dark = $(".dark");
-light.hide();
+currentTheme == "dark" ? dark.hide() : light.hide();
 
-const toggle = () => {
-  if (darkMode) {
-    const hide = dark
-    const show = light
-    hideShow(dark, light);
-    body.css("background-color", "rgb(191,191,186)");
-    body.css("color", "rgb(38,38,38)");
-    p.css("color", "rgb(38,38,38)");
-    footer.css("color", "rgb(38,38,38)");
-  } else {
-    hideShow(light, dark);
-    body.css("background-color", "");
-    body.css("color", "rgb(191,191,186)");
-    p.css("color", "#f2f2eb");
-    footer.css("color", "#f2f2eb");
-  }
-  darkMode = !darkMode;
+const toggleTheme = () => {
+  const hide = currentTheme
+  currentTheme == "dark" ? hideShow(light, dark) : hideShow(dark, light)
+  currentTheme = currentTheme == "dark" ? "light" : "dark"
+  const show = currentTheme
+  localStorage.setItem("__theme", currentTheme)
+  document.body.setAttribute("data-theme", currentTheme);
+  hideShow(hide, show)
 };
 
-toggleLight.on("click", toggle);
+toggleLight.on("click", toggleTheme);
 
+//check if on homepage
 if (!isHome) {
   const buttons = $("#project-menu").children();
 
@@ -96,3 +85,8 @@ if (!isHome) {
   buttons.on("click", handleClick);
 
 }
+
+//test
+
+const theme = localStorage.getItem("__theme");
+console.log(theme)

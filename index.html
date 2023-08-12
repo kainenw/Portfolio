@@ -15,6 +15,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
+    <script>
+      let currentTheme = localStorage.getItem("__theme");
+
+      if (!currentTheme){
+        currentTheme = "dark"
+      }
+
+      localStorage.setItem("__theme", currentTheme);
+      document.body.setAttribute("data-theme", currentTheme);
+    </script>
     <header>
       <nav>
         <a href="index.html" class="orange">
@@ -37,7 +47,6 @@
         <a href="contact.html" class="orange">contact</a>
       </nav>
     </header>
-    <div id="top"></div>
     <!-- <section id="top">
       <div id="glass">
         <h1 class="orange">
@@ -45,9 +54,9 @@
         </h1>
       </div>
     </section> -->
-    <img id="headshot" src="./src/Img/headshot.png" alt="headshot" />
     <main>
-      <section>
+      <section id="top">
+        <img id="headshot" src="./src/Img/headshot.png" alt="headshot" />
         <h2 id="first" class="orange">Hi there!</h2>
         <p>
           I'm Kainen, a Nashville-based frontend web developer. You can view my
@@ -65,7 +74,7 @@
         and Bootstrap. I build aesthetic, responsive, interactive and accessible
         websites and web applications.
       </p>
-      <div class="logos dark">
+      <div class="icons dark">
         <!--<h2>Skills</h2>-->
         <img src="./src/Img/dark/html_logo.png" alt="HTML" class="dark" />
         <img src="./src/Img/dark/CSS_icon.png" alt="CSS" class="dark" />
@@ -80,7 +89,7 @@
         <!-- <img src="src/Img/dark/angular_logo.png" alt="Angular" class="dark">
         <img src="src/Img/dark/bootstrap_logo.png" alt="Bootstrap" class="dark">-->
       </div>
-      <div class="logos">
+      <div class="icons light">
         <!--<h2>Skills</h2>-->
         <img src="./src/Img/light/html_logo.png" alt="HTML" class="light" />
         <img src="./src/Img/light/CSS_icon.png" alt="CSS" class="light" />

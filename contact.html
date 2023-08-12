@@ -15,6 +15,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
+    <script>
+      let currentTheme = localStorage.getItem("__theme");
+
+      if (!currentTheme) {
+        currentTheme = "dark";
+      }
+      localStorage.setItem("__theme", currentTheme);
+      document.body.setAttribute("data-theme", currentTheme);
+    </script>
     <header>
       <nav>
         <a href="index.html" class="orange">
@@ -37,7 +46,6 @@
         <a href="contact.html" class="orange">contact</a>
       </nav>
     </header>
-    <div id="top"></div>
     <!-- <section id="top">
       <div id="glass">
         <h1 class="orange">
@@ -46,9 +54,9 @@
       </div>
     </section> -->
     <main>
-      <section id="contacts">
+      <section id="top">
         <h3 class="orange">Let's stay in touch!</h3>
-        <div class="logos">
+        <div class="icons">
           <a href="https://www.linkedin.com/in/kainen-w-0612ab12b/"
             ><img
               src="src/Img/linkedin_logo.png"
